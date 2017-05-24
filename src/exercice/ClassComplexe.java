@@ -2,34 +2,38 @@ package exercice;
 
 public class ClassComplexe {
 	//propriétés
-	private int reel;
-	private int img;
+	private double reel;
+	private double img;
 	
 	//constructeurs vide et initialisé
 	public ClassComplexe(){
-		reel = 0;
-		img = 0;
+		reel = 0.00;
+		img = 0.00;
 	}
-	public ClassComplexe(int reel, int img){
+	public ClassComplexe(double reel, double img){
 		this.reel = reel;
 		this.img = img;
 	}
 	
 	//accesseurs et mutateurs
-	public int getReel(){
+	public double getReel(){
 		return reel;
 	}
-	public void setReel(int reel){
+	public void setReel(double reel){
 		this.reel=reel;
 	}
-	public int getImg(){
+	public double getImg(){
 		return img;
 	}
-	public void setImg(int img){
+	public void setImg(double img){
 		this.img = img;
 	}
 	
 	//méthodes
+	public String toString(){
+		return "le nombre complexe ("+this.getReel()+", "+this.getImg()+")";
+	}
+	
 	
 }
 
