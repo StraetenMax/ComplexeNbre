@@ -1,6 +1,7 @@
 package application;
 
 import exercice.ClassComplexe;
+import exercice.Eq2Degre;
 
 public class Test {
 
@@ -12,6 +13,12 @@ public class Test {
 	
 	     vt.addition(vt1);
 	    System.out.println(vt1.multiplication(vt));
+	
+	    Eq2Degre equation = new Eq2Degre(-2.0,1.0,+3.0);
+	    equation.afficheDiscriminant();
+	    equation.resoudre();
+	    equation.afficheSolutions();
+	
 	}
 			
 }
