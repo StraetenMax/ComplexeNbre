@@ -33,7 +33,10 @@ public class ClassComplexe {
 	public String toString(){
 		return "le nombre complexe ("+this.getReel()+", "+this.getImg()+")";
 	}
-	
+	 public void addition(ClassComplexe str){
+		 System.out.println((this.getReel()+ str.getReel())+","+(this.getImg()+str.getImg()));
+	 }
+	 
 	
 }
 
