@@ -34,9 +34,12 @@ public class ClassComplexe {
 		return "le nombre complexe ("+this.getReel()+", "+this.getImg()+")";
 	}
 	 public void addition(ClassComplexe str){
-		 System.out.println((this.getReel()+ str.getReel())+","+(this.getImg()+str.getImg()));
+		 System.out.println((this.getReel()+ str.getReel())+", "+(this.getImg()+str.getImg()));
 	 }
 	 
-	
+	 public String multiplication(ClassComplexe str1){
+		 String str2 = this.getReel()*str1.getReel()+" "+this.getImg()*str1.getImg();
+		 return str2;
+	 }	
 }
 

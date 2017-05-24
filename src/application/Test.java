@@ -11,6 +11,7 @@ public class Test {
 		System.out.println(vt1);
 	
 	     vt.addition(vt1);
+	    System.out.println(vt1.multiplication(vt));
 	}
 			
 }
